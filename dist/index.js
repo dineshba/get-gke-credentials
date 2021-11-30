@@ -2753,7 +2753,7 @@ class ClusterClient {
             const headers = yield authClient.getRequestHeaders();
             headers['User-Agent'] = this.userAgent;
             const url = `${this.defaultEndpoint}/${this.getResource(clusterName)}`;
-            core.info("url is $url");
+            core.info(`url is ${this.defaultEndpoint} and ${url}`);
             const resp = (yield authClient.request({
                 url: url,
                 headers: headers,
