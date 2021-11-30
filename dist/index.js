@@ -2758,6 +2758,7 @@ class ClusterClient {
                 url: url,
                 headers: headers,
             }));
+            core.info(`resp ${resp}`);
             return resp;
         });
     }

@@ -154,6 +154,7 @@ export class ClusterClient {
       url: url,
       headers: headers,
     })) as ClusterResponse;
+    core.info(`resp ${resp}`)
     return resp;
   }
 
