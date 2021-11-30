@@ -149,7 +149,7 @@ export class ClusterClient {
     const headers = await authClient.getRequestHeaders();
     headers['User-Agent'] = this.userAgent;
     const url = `${this.defaultEndpoint}/${this.getResource(clusterName)}`;
-    core.info("url is $url")
+    core.info(`url is ${url}`)
     const resp = (await authClient.request({
       url: url,
       headers: headers,
